@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<script defer src="assets/script.js"></script>
+	<title>Interactif</title>
+</head>
+<body>
+	<h1 id="header">Modification texte </h1>
+
+	<div>
+		<label for="texte">Mettre votre texte :</label>
+		<input type="text" id="texte" onkeyup="afficherTexte()">
+		<button onclick="afficherTexte()">Afficher</button>
+	</div>
+
+	<div class="color-buttons">
+		<button class="color-button" onclick="changerCouleur('blue')">Couleur Bleu</button>
+		<button class="color-button" onclick="changerCouleur('rgb(74, 243, 142)')">Couleur Vert</button>
+		<button class="color-button" onclick="changerCouleur('rgb(255, 0, 251)')">Couleur Rose</button>
+	</div>
+
+	<footer>
+		<p>© 2024 SEHIM Corporate Interactive Turfu Code</p>
+	</footer>
+</body>
+</html>
+

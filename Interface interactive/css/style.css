@@ -1,0 +1,74 @@
+body {
+	font-family: Arial, sans-serif;
+    margin: 2%;
+    background-color: #000000;
+    color: #f5f5f5;
+}
+
+h1 {
+	text-align: center;
+	padding: 5%;
+}
+
+div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	padding: 0.5%;
+	margin: 1%;
+	border-radius: 10%;
+}
+
+.color-buttons {
+    display: flex;
+    gap: 2%;
+    margin-top: 2%;
+}
+
+.color-buttons button {
+    color: white;
+    padding: 2%;
+    border: none;
+    cursor: pointer;
+    border-radius: 2%;
+    transition: background-color 0.3s ease;
+}
+
+.color-buttons button:nth-child(1) {
+    background-color: blue;
+}
+
+.color-buttons button:nth-child(2) {
+    background-color: rgb(74, 243, 142);
+}
+
+.color-buttons button:nth-child(3) {
+    background-color: rgb(255, 0, 251);
+}
+
+.color-buttons button:hover {
+    background-color: darkgray;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    padding: 0.5% 0.5%;
+    border: none;
+    cursor: pointer;
+    border-radius: 30%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+footer {
+	text-align: center;
+	margin-top: 5%;
+}
+
