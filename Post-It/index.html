@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="assets/script.js"></script>
+    <title>Post-it</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1 class="title">POST-IT</h1>
+            <form>
+                <label for="titreInput"></label>
+                <input type="text" id="titreInput" placeholder="Entrez un titre">
+                
+                <label for="texteInput"></label>
+                <input type="text" id="texteInput" placeholder="Entrez du texte">
+                
+                <div class="button-group">
+                    <button type="button" id="effacerTexte" onclick="effacerChamps()">Effacer</button>
+                    <button type="button" id="enregistrer" onclick="ajouterPostit()">Enregistrer</button>
+                </div>
+            </form>
+        </div>
+        <div class="postits" id="postitsContainer">
+        </div>
+    </div>
+</body>
+</html>
