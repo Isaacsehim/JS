@@ -17,4 +17,12 @@ function changerCouleur(couleur) {
 		header.style.color = "transparent";
 	}
 }
-//Faire en bootstrap et pas onclick mais addEventListener
+
+function effacerTexte() {
+    const inputTexte = document.getElementById('texte');
+    const header = document.getElementById('header');
+    inputTexte.value = '';
+    header.style.backgroundImage = "";
+	header.style.color = "";
+	header.textContent = "Modification texte";
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="assets/script.js"></script>
+    <title>Interactif</title>
+</head>
+
+<body class="bg-dark text-light">
+
+    <div class="container text-center py-5">
+        <h1 id="header" class="mb-4">Modification texte</h1>
+
+        <div class="mb-4">
+            <label for="texte" class="form-label">Mettre votre texte :</label>
+            <input type="text" id="texte" class="form-control d-inline w-auto" onkeyup="afficherTexte()">
+            <button class="btn btn-secondary ms-2" onclick="effacerTexte()">Effacer</button>
+        </div>
+
+        <div class="color-buttons mb-4">
+            <button class="btn btn-primary" onclick="changerCouleur('rgb(13, 110, 253)')">Couleur Bleu</button>
+            <button class="btn btn-success" onclick="changerCouleur('rgb(25, 135, 84)')">Couleur Vert</button>
+            <button class="btn btn-danger" onclick="changerCouleur('rgb(220, 53, 69)')">Couleur Rouge</button>
+        </div>
+
+        <footer class="mt-5">
+            <p>© 2024 SEHIM Corporate Interactive Turfu Code</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
