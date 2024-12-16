@@ -65,11 +65,14 @@ document.getElementById("postitsContainer").addEventListener("click", function (
 
     const isActive = target.classList.contains("active");
 
-    document.querySelectorAll(".postit").forEach(postit => {
-        postit.classList.remove("active");
-        const validerButton = postit.querySelector(".validerModifs");
-        if (validerButton) validerButton.remove();
-    });
+	const postits = document.getElementsByClassName("postit");
+	for (let i = 0; i < postits.length; i++) {
+		postits[i].classList.remove("active");
+		const validerButton = postits[i].getElementsByClassName("validerModifs")[0];
+		if (validerButton) {
+			validerButton.remove();
+		}
+	}
 
     if (!isActive) {
         target.classList.add("active");

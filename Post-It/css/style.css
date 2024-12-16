@@ -131,7 +131,7 @@ button {
 
 /* Style d'un post-it actif */
 .postit.active {
-    transform: scale(1.05) rotate(0deg);
+    transform: scale(1.02) rotate(0deg);
     z-index: 10;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
     position: relative;
@@ -158,9 +158,9 @@ button {
     top: 0;
     right: 0;
     width: 5%;
-    height: 10%;
+    height: 5%;
     clip-path: polygon(0 0, 100% 0, 100% 100%);
-    z-index: 1;
+    z-index: 0.5;
 }
 
 /* Style du pseudo-élément avant d'un post-it */
@@ -202,8 +202,8 @@ button {
 /* Style du bouton valider les modifications */
 .validerModifs {
     position: absolute;
-    bottom: 10%;
-    right: 10%;
+    bottom: 5%;
+    right: 5%;
     background-color: #43a047;
     color: white;
     border: none;
